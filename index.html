@@ -1,64 +1,198 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>Arthur's and Rebecca's Wedding</title>
-<meta http-equiv="content-type" content="text/html; charset=utf-8" >
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style type="text/css">
-body {
-  /*background: linear-gradient(90deg, white, gray);*/
-  background-color: #eee;
-}
+    <title>Arthur's and Rebecca's Wedding</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style type="text/css">
+        body {
+            /*background: linear-gradient(90deg, white, gray);*/
 
-body, h1, p {
-  font-family: "Helvetica Neue", "Segoe UI", Segoe, Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-weight: normal;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
-
-.container {
-  margin-left:  auto;
-  margin-right:  auto;
-  margin-top: 7px;
-  max-width: 1170px;
-  padding-right: 15px;
-  padding-left: 15px;
-}
-
-.row:before, .row:after {
-  display: table;
-  content: " ";
-}
-
-h1 {
-  font-size: 48px;
-  font-weight: 300;
-  margin: 0 0 20px 0;
-}
-
-.lead {
-  font-size: 21px;
-  font-weight: 200;
-  margin-bottom: 20px;
-}
-
-p {
-  margin: 0 0 10px;
-}
-
-a {
-  color: #3282e6;
-  text-decoration: none;
-}
-</style>
+            position: relative;
+            background-color: #eee;
+        }
+        body,
+        h1,
+        p {
+            font-family: "Helvetica Neue", "Segoe UI", Segoe, Helvetica, Arial, "Lucida Grande", sans-serif;
+            font-weight: normal;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        ol {
+            font-family: "Helvetica Neue", "Segoe UI", Segoe, Helvetica, Arial, "Lucida Grande", sans-serif;
+            font-weight: normal;
+            text-align: left;
+        }
+        .container {
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 7px;
+            max-width: 1170px;
+            padding-right: 15px;
+            padding-left: 15px;
+            z
+        }
+        .row:before,
+        .row:after {
+            display: table;
+            content: " ";
+        }
+        h1 {
+            font-size: 48px;
+            font-weight: 300;
+            margin: 0 0 20px 0;
+        }
+        .lead {
+            font-size: 21px;
+            font-weight: 200;
+            margin-bottom: 20px;
+        }
+        p {
+            margin: 0 0 10px;
+        }
+        a {
+            color: #3282e6;
+            text-decoration: none;
+        }
+        #rsvp {
+            padding-top: 50px;
+            height: 700px;
+            color: #fff;
+            background-color: #1E88E5;
+        }
+        #contact {
+            padding-top: 50px;
+            height: 700px;
+            color: #fff;
+            background-color: #1E88E5;
+        }
+        #wedding {
+            padding-top: 50px;
+            height: 700px;
+            color: #fff;
+            background-color: #673ab7;
+        }
+        #about {
+            padding-top: 50px;
+            height: 700px;
+            color: #fff;
+            background-color: #ff9800;
+        }
+        #music {
+            padding-top: 50px;
+            height: 700px;
+            color: #fff;
+            background-color: #00bcd4;
+        }
+        #faq {
+            padding-top: 50px;
+            height: 700px;
+            color: #fff;
+            background-color: #009688;
+        }
+    </style>
 </head>
 
-<body>
-<div class="container text-center" id="error">
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfrsQGGSXhvoQSy_b7hgql0FPyFhvQvznY-YXld7eZ_w0Bmlw/viewform?embedded=true" width="100%" height="700" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
-</div>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
 
+    <nav class="navbar navbar-default bg-faded navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">AR</a>
+            </div>
+            <div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#intro">Welcome</a>
+                        </li>
+                        <li><a href="#rsvp">RSVP</a>
+                        </li>
+                        <li><a href="#contact">Contact</a>
+                        </li>
+                        <li><a href="#wedding">Wedding Party</a>
+                        </li>
+                        <li><a href="#about">About</a>
+                        </li>
+                        <li><a href="#music">Music Requests</a>
+                        </li>
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#faq">FAQ<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#section41">Wedding Do's and Don't</a>
+                                </li>
+                                <li><a href="#section42">What to Wear</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div id="intro" class="container-fluid">
+        <h1>Welcome!</h1>
+        <iframe width="100%" height="700" src="https://www.youtube.com/embed/-7JOa3dISg0" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div id="rsvp" class="container-fluid">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfrsQGGSXhvoQSy_b7hgql0FPyFhvQvznY-YXld7eZ_w0Bmlw/viewform?embedded=true" width="100%" height="700" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+    </div>
+    <div id="contact" class="container-fluid">
+        <h1>Contact Us</h1>
+        <p>Call us by phone or fill out the form above with the passcode sent with your invitation to RSVP.</p>
+    </div>
+    <div id="wedding" class="container-fluid">
+        <h1>Wedding Details</h1>
+        <p>Date:</p>
+        <p>Time:</p>
+        <p>Location:</p>
+        <p>Map:</p>
+        <p><a href="#faq">Checkout the section for what to wear in FAQ</a>
+        </p>
+    </div>
+    <div id="about" class="container-fluid">
+        <h1>About the Couple</h1>
+        <p>Oops! This section is not ready yet.</p>
+    </div>
+    <div id="music" class="container-fluid">
+        <h1>Music Requests</h1>
+        <p>Oops! This section is not ready yet.</p>
+    </div>
+    <div id="faq" class="container-fluid">
+        <h1>FAQ</h1>
+        <p>Here's a summary of a few questions that are usually asked about weddings. We would like to clear up as much confusion as possible.</p>
+    </div>
+    <div id="section41" class="container-fluid">
+        <h1>Wedding Do's and Don'ts</h1>
+
+        <ol>
+            <li>What can we bring?</li>
+            <li>Where should gifts be brought?</li>
+            <li>Can we arrive early?</li>
+            <li>Can we arrive late?</li>
+        </ol>
+
+
+    </div>
+    <div id="section42" class="container-fluid">
+        <h1>What to Wear</h1>
+
+        <ol>
+            <li>Dress formally</li>
+            <li>Do not wear red</li>
+            <li>Dress appropriately for the weather</li>
+        </ol>
+    </div>
 </body>
+
 </html>
